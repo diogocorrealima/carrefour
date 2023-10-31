@@ -1,0 +1,1 @@
+This local is alocated for docker-compose and environment files.

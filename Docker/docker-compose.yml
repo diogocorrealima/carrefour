@@ -1,0 +1,39 @@
+version: "3.7"
+
+services:
+
+  fluxodecaixa-api:
+    image: fluxodecaixa-api
+    build:
+      context: ../Services/FluxoDeCaixa
+      dockerfile: FluxoDeCaixa.dockerfile
+    env_file:
+      - FluxoDeVendasApi.env
+    ports:
+      - 8080:80
+    links:
+      - mongodb
+    depends_on:
+      - mongodb  
+  
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Asd@123456789
+
+  rabbitmq:
+    image: 'bitnami/rabbitmq:latest'
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+networks:
+  rabbitmq_go_net:
+    driver: bridge   
