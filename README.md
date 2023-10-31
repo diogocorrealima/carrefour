@@ -21,8 +21,8 @@
 
 </br></br>
 
-URLs:
-FluxoDeCaixaAPI - http://localhost:8080/swagger/index.html</br>
+URLs: </br>
+FluxoDeCaixaAPI - http://localhost:8080/swagger/index.html
 </br>
 RabbitMq: http://localhost:15672/#/queues  </br>
 User: user </br>
