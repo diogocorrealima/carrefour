@@ -1,28 +1,31 @@
 # Carrefour Desafio
-<b>Desenho de Solução </b>
+
+## Solution Drawing
 
 ![image](https://github.com/diogocorrealima/desafio-carrefour/assets/13989921/026d787d-c9d2-4f34-9d37-45dce34ac56b)
 
 
-<b>Desenho Esteira DevSecOps</b>
+## DevSecOps Steps Drawing
 
 ![image](https://user-images.githubusercontent.com/13989921/217170523-3e763f7d-e4ff-4f78-9283-6b64198cc414.png)
 
 
 
-Projeto estruturado com conceitos de DDD, CQRS, 
+
 
 </br></br>
-Para rodar o projeto:
+## To run the project:
 </br>
-1 - Acessar pasta "./Docker"</br>
-2 - Rodar o comando "docker-compose up"</br>
+1 - Access folder "./Docker"</br>
+2 - Run command "docker-compose up"</br>
+
 </br></br>
+
 URLs:
 FluxoDeCaixaAPI - http://localhost:8080/swagger/index.html</br>
 </br>
 RabbitMq: http://localhost:15672/#/queues  </br>
-User: user
+User: user </br>
 Password: bitnami
 </br>
 ## Technologies implemented:
