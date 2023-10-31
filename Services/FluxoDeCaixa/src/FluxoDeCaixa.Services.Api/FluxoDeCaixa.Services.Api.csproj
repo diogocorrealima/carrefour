@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<UserSecretsId>b543be42-f7ab-48b6-b633-72d6fb529fb7</UserSecretsId>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="MediatR" Version="12.0.1" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\FluxoDeCaixa.Application\FluxoDeCaixa.Application.csproj" />
+		<ProjectReference Include="..\FluxoDeCaixa.Infra.CrossCutting.Bus\FluxoDeCaixa.Infra.CrossCutting.Bus.csproj" />
+		<ProjectReference Include="..\FluxoDeCaixa.Infra.CrossCutting.Identity\FluxoDeCaixa.Infra.CrossCutting.Identity.csproj" />
+		<ProjectReference Include="..\FluxoDeCaixa.Infra.CrossCutting.IoC\FluxoDeCaixa.Infra.CrossCutting.IoC.csproj" />
+	</ItemGroup>
+</Project>

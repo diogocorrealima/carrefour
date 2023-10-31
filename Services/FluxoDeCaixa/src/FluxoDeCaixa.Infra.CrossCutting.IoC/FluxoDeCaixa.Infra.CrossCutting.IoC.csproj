@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FluxoDeCaixa.Application\FluxoDeCaixa.Application.csproj" />
+		<ProjectReference Include="..\FluxoDeCaixa.Domain\FluxoDeCaixa.Domain.csproj" />
+		<ProjectReference Include="..\FluxoDeCaixa.Infra.CrossCutting.Identity\FluxoDeCaixa.Infra.CrossCutting.Identity.csproj" />
+		<ProjectReference Include="..\FluxoDeCaixa.Infra.Data\FluxoDeCaixa.Infra.Data.csproj" />
+	</ItemGroup>
+
+</Project>
